@@ -70,5 +70,5 @@ String[]datas = new String{"aaa","bbb","ccccc"};
 ![自定义头部dialog](https://github.com/moo611/DesongDialog-Android/blob/master/app/3%20(1).jpg "自定义头部dialog")
 
 # 补充
-####1.基于dialog的封装,因此很多属性直接用dialog的方法就可以，比如设置动画，设置dialog的位置等等。
-####2.要想宽度占满屏幕，需要自定义一个style，然后再初始化的构造方法里加入这个style.参考默认标题dialog的做法。
+#### 1.基于dialog的封装,因此很多属性直接用dialog的方法就可以，比如设置动画，设置dialog的位置等等。
+#### 2.要想宽度占满屏幕，需要自定义一个style，然后再初始化的构造方法里加入这个style.参考默认标题dialog的做法。
