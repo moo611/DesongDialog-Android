@@ -1,0 +1,27 @@
+<resources>
+
+    <style name="customdialog" parent="Theme.AppCompat.Light.Dialog">
+    <!--backgroundDimEnabled 赋值为true（默认为true）的时候，当dialog弹出的时候，其余地方变暗，赋值为false的时候其余地方正常显示-->
+    <item name="android:backgroundDimEnabled">true</item>
+    <!--windowFullscreen 是否全屏显示，“true”为全屏，“false”为不全屏-->
+    <item name="android:windowFullscreen">false</item>
+    <!--windowNoTitle 是否显示标题，“true”为显示，“false”为不显示-->
+    <item name="android:windowNoTitle">true</item>
+    <!--windowContentOverlay 是否设置window上的覆盖悬浮的东西，不需要的话就设置@null,需要的话就设置一些资源图片-->
+    <item name="android:windowContentOverlay">@null</item>
+    <!--windowIsTranslucent 窗口是否透明显示-->
+    <item name="android:windowIsTranslucent">true</item>
+    <!--windowBackground 窗口背景设置-->
+    <item name="android:windowBackground">@android:color/white</item>
+    <!--是否悬浮在窗口上-->
+    <item name="android:windowIsFloating">true</item>
+    <!--是否设置边框-->
+    <item name="android:windowFrame">@null</item>
+    <!--是否有弹出动画-->
+    <!--<item name="android:windowAnimationStyle">@style/PopupAnimation</item>-->
+    <!--backgroundDimAmount 值的范围是“0.0～1.0”这个属性跟“backgroundDimEnabled”息息相关，当“backgroundDimEnabled”设置为“true”时，它才能生效，值越大背景颜色越暗,当为“1.0”的时候背景全黑-->
+    <item name="android:backgroundDimAmount">0.5</item>
+
+    </style>
+
+</resources>
