@@ -14,7 +14,7 @@ allprojects {
 ```
 ```
 dependencies {
-	        implementation 'com.github.moo611:DesongDialog-Android:1.0.1'
+	        implementation 'com.github.moo611:DesongDialog-Android:1.0.2'
 	}
 ```
 ## step2.初始化dialog
