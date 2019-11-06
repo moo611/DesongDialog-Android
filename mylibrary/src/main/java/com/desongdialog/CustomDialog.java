@@ -76,15 +76,7 @@ public class CustomDialog extends Dialog {
         rv.setLayoutManager(new LinearLayoutManager(c));
 
         //窗口位置
-        Window w = getWindow();
-        if (w==null){
-            return;
-        }
-        WindowManager.LayoutParams params = w.getAttributes();
-        params.width = WindowManager.LayoutParams.MATCH_PARENT;
-        params.height = WindowManager.LayoutParams.WRAP_CONTENT;
-        w.setAttributes(params);
-        w.setGravity(Gravity.BOTTOM);
+        setWindow(getWindow());
 
     }
 
@@ -126,15 +118,7 @@ public class CustomDialog extends Dialog {
 
 
         //窗口位置
-        Window w = getWindow();
-        if (w==null){
-            return;
-        }
-        WindowManager.LayoutParams params = w.getAttributes();
-        params.width = WindowManager.LayoutParams.MATCH_PARENT;
-        params.height = WindowManager.LayoutParams.WRAP_CONTENT;
-        w.setAttributes(params);
-        w.setGravity(Gravity.BOTTOM);
+        setWindow(getWindow());
 
     }
 
@@ -183,15 +167,53 @@ public class CustomDialog extends Dialog {
         this.setCancelable(true);
 
         //窗口位置
+        setWindow(getWindow());
+
+    }
+
+
+    /**
+     * 设置窗口位置
+     */
+
+    private void setWindow(Window wd){
+
+
+        if (wd==null){
+            return;
+        }
+        WindowManager.LayoutParams params = wd.getAttributes();
+        params.width = WindowManager.LayoutParams.MATCH_PARENT;
+        params.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        wd.setAttributes(params);
+        wd.setGravity(Gravity.BOTTOM);
+
+    }
+
+    /**
+     * 设置动画
+     */
+
+    public void setAnim(int styleId){
+
         Window w = getWindow();
         if (w==null){
             return;
         }
-        WindowManager.LayoutParams params = w.getAttributes();
-        params.width = WindowManager.LayoutParams.MATCH_PARENT;
-        params.height = WindowManager.LayoutParams.WRAP_CONTENT;
-        w.setAttributes(params);
-        w.setGravity(Gravity.BOTTOM);
+        w.setWindowAnimations(styleId);
+
+    }
+
+    /**
+     * 设置位置
+     */
+
+    public void setPosition(int position){
+        Window w = getWindow();
+        if (w==null){
+            return;
+        }
+        w.setGravity(position);
 
     }
 
